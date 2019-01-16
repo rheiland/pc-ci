@@ -1,4 +1,12 @@
-os: osx
+matrix:
+  include:
+    - os: osx
+      osx_image: xcode8
+      env:
+        - MATRIX_EVAL="brew install gcc && PHYSICELL_CPP=g++-7"
+
+before_install:
+    - eval "${MATRIX_EVAL}"
 
 # Enable C++ support
 language: cpp
