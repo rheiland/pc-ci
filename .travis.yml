@@ -1,9 +1,7 @@
 # Enable C++ support
 language: cpp
 
-os: osx
-  osx_image: xcode10.1
-  env: CC='gcc-8' CXX='g++-8' PHYSICELL_CPP='g++-8' BREW='gcc@8'
+os: linux
 
 # Compiler selection
 compiler:
