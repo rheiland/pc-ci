@@ -12,5 +12,7 @@ script:
 
 notifications:
   email:
-    on_success: always # default: change
+    recipients:
+      - randy.heiland@gmail.com
+    on_success: always # default: change  (always, never)
     on_failure: always # default: always
