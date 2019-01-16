@@ -9,3 +9,8 @@ compiler:
 script:
   - cd PhysiCell-1.4.1
   - make
+
+notifications:
+  email:
+    on_success: always # default: change
+    on_failure: always # default: always
